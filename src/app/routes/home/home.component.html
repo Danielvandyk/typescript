@@ -1,0 +1,26 @@
+
+<section>
+<div class="bg-dark d-flex align-items-center justify-content-center" style="height: 38vh">
+  <p class="text-white fs-l">Bienvenido a lo mejor del entretenimiento</p>
+</div>
+
+</section>
+
+<section class="bg-dark container-fluid">
+
+  <h3 class="text-white">Peliculas</h3>
+
+  <div class="py-4 d-flex justify-content-center flex-wrap">
+
+    <app-card 
+    *ngFor="let movie of this.moviesDB"
+    title="{{movie.title}}"
+    description="{{movie.description}}"
+    btnText="{{movie.btnText}}"
+    image="{{movie.image}}"
+    btnColor="{{movie.btnColor}}"
+    
+    ></app-card>
+  </div>
+</section>
+
