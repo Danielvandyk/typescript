@@ -12,6 +12,7 @@ import { Page404Component } from './routes/page404/page404.component';
 import { LoginComponent } from './routes/login/login.component';
 import { CardComponent } from './routes/card/card.component';
 import { HttpClientModule} from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { HttpClientModule} from '@angular/common/http'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
